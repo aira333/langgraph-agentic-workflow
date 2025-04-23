@@ -1,9 +1,3 @@
-"""
-Enhanced Agentic Workflow Implementation using Langgraph
--------------------------------------------------
-This enhanced version integrates actual tools and adds state tracking.
-"""
-
 import os
 from typing import Dict, List, Tuple, Any, Optional, Annotated, TypedDict, Sequence, Literal
 import json
