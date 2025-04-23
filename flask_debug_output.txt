@@ -1,0 +1,36 @@
+>>> FLASK APP STARTED <<<
+Warning: OPENAI_API_KEY environment variable not found.
+Either set it in your environment or create a .env file.
+ * Debugger is active!
+ * Debugger PIN: 967-179-514
+127.0.0.1 - - [23/Apr/2025 17:15:12] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:15:12] "GET /api/conversations HTTP/1.1" 200 -
+>>> run_agent CALLED <<<
+127.0.0.1 - - [23/Apr/2025 17:15:17] "POST /api/query HTTP/1.1" 200 -
+AgentState before workflow invoke: {'id': 'f308e4a0-ba5c-43eb-96c2-61ece441fdbf', 'user_query': 'hi', 'tasks': [], 'current_task_index': None, 'needs_refinement': False, 'refinement_feedback': None, 'final_answer': None, 'conversation_history': [{'role': 'user', 'content': 'hi', 'timestamp': '2025-04-23T17:15:17.677545'}], 'next_step': 'plan', 'thread_id': 'conv_1745408717'}
+127.0.0.1 - - [23/Apr/2025 17:15:17] "GET /api/status/conv_1745408717 HTTP/1.1" 200 -
+Error parsing plan: Expecting value: line 1 column 1 (char 0)
+127.0.0.1 - - [23/Apr/2025 17:15:19] "GET /api/status/conv_1745408717 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:15:22] "GET /api/status/conv_1745408717 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:15:22] "GET /api/conversations HTTP/1.1" 200 -
+>>> run_agent CALLED <<<
+AgentState before workflow invoke: {'id': '32d833d3-20b7-4223-af7f-d571b9e20445', 'user_query': 'what is renewable energy and list 3 new innovations in that area', 'tasks': [], 'current_task_index': None, 'needs_refinement': False, 'refinement_feedback': None, 'final_answer': None, 'conversation_history': [{'role': 'user', 'content': 'what is renewable energy and list 3 new innovations in that area', 'timestamp': '2025-04-23T17:16:10.386397'}], 'next_step': 'plan', 'thread_id': 'conv_1745408770'}
+127.0.0.1 - - [23/Apr/2025 17:16:10] "POST /api/query HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:16:10] "GET /api/status/conv_1745408770 HTTP/1.1" 200 -
+Error parsing plan: Expecting value: line 1 column 1 (char 0)
+127.0.0.1 - - [23/Apr/2025 17:16:12] "GET /api/status/conv_1745408770 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:16:14] "GET /api/status/conv_1745408770 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 17:16:14] "GET /api/conversations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:14] "GET /api/conversations HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:38] "POST /api/query HTTP/1.1" 200 -
+>>> run_agent CALLED <<<
+127.0.0.1 - - [23/Apr/2025 20:25:39] "GET /api/status/conv_1745420138 HTTP/1.1" 200 -
+AgentState before workflow invoke: {'id': '12ab2217-dee8-4417-a2af-d18723ca0e55', 'user_query': 'who is the pope of vatican city', 'tasks': [], 'current_task_index': None, 'needs_refinement': False, 'refinement_feedback': None, 'final_answer': None, 'conversation_history': [{'role': 'user', 'content': 'who is the pope of vatican city', 'timestamp': '2025-04-23T20:25:39.086756'}], 'next_step': 'plan', 'thread_id': 'conv_1745420138'}
+127.0.0.1 - - [23/Apr/2025 20:25:41] "GET /api/status/conv_1745420138 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:43] "GET /api/status/conv_1745420138 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:45] "GET /api/status/conv_1745420138 HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2025 20:25:45] "GET /api/conversations HTTP/1.1" 200 -
+Exception in thread Thread-1 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
