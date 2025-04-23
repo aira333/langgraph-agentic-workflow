@@ -53,8 +53,6 @@ This project implements an agentic workflow system using LangGraph, LangChain, F
 ---
 
 ## Architecture
-![Agentic Workflow Architecture](diagram.png)
-
 - **Outer Loop:**
   - **PlanAgent:** Splits the user query into sub-tasks
   - **Refinement:** Iteratively modifies, deletes, or adds sub-tasks based on feedback
